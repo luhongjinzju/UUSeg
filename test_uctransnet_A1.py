@@ -9,15 +9,15 @@ import tifffile as tiff
 from uctransnet_model import build_uctransnet
 
 # =========================
-# 测试集路径（保持你的数据集不变）
+# 测试集路径
 # =========================
-test_img_dir  = r"D:\项目unet\寒假\my_code\val_dataset\reconstruction_val"
-test_mask_dir = r"D:\项目unet\寒假\my_code\val_dataset\gold_mask_val"
+test_img_dir  = r"D:\项目unet\my_code\val_dataset\reconstruction_val"
+test_mask_dir = r"D:\项目unet\my_code\val_dataset\gold_mask_val"
 
 # =========================
 # 输出路径：全部切换到 uctransnet_A
 # =========================
-proj_root = r"D:\项目unet\寒假\my_code\uctransnet_A"
+proj_root = r"D:\项目unet\my_code\uctransnet_A"
 save_pred_dir = os.path.join(proj_root, "pred_best")
 os.makedirs(save_pred_dir, exist_ok=True)
 
