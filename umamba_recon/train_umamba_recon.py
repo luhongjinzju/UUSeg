@@ -12,21 +12,21 @@ from utils_recon import seed_everything, save_checkpoint
 
 
 # =======================
-# 写死路径（按你实际目录）
+# 路径
 # =======================
 
 # 训练集根目录：你已经确认存在 input/ fluorescence/
-TRAIN_ROOT = Path("/home/crx/home/crx/pycharm_projects/寒假/my_code/temp_dataset")
+TRAIN_ROOT = Path("/home/crx/home/crx/pycharm_projects/my_code/temp_dataset")
 TRAIN_INPUT_SUBDIR = "input"
 TRAIN_TARGET_SUBDIR = "fluorescence"
 
 # 验证集根目录：你之前一直用 test_dataset/input_test + fluorescence_test
-VAL_ROOT = Path("/home/crx/home/crx/pycharm_projects/寒假/my_code/test_dataset")
+VAL_ROOT = Path("/home/crx/home/crx/pycharm_projects/my_code/test_dataset")
 VAL_INPUT_SUBDIR = "input_test"
 VAL_TARGET_SUBDIR = "fluorescence_test"
 
 # 输出根目录（写死），并按 net 自动分子目录
-BASE_OUT_DIR = Path("/home/crx/home/crx/pycharm_projects/寒假/my_code/umamba_recon/experiments")
+BASE_OUT_DIR = Path("/home/crx/home/crx/pycharm_projects/my_code/umamba_recon/experiments")
 
 
 def parse_args():
