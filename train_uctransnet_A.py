@@ -10,18 +10,18 @@ from uctransnet_model import build_uctransnet
 from utils import WeightedDiceBCE
 
 # =========================
-# 数据路径（保持你的数据集不变）
+# 数据路径
 # =========================
-train_images_path = r"D:/项目unet/寒假/my_code/temp_dataset/reconstruction"
-train_masks_path  = r"D:/项目unet/寒假/my_code/temp_dataset/mask"
+train_images_path = r"D:/项目unet/my_code/temp_dataset/reconstruction"
+train_masks_path  = r"D:/项目unet/my_code/temp_dataset/mask"
 
-val_img_dir  = r"D:/项目unet/寒假/my_code/test_dataset/reconstruction_test"
-val_mask_dir = r"D:/项目unet/寒假/my_code/test_dataset/gold_mask_test"
+val_img_dir  = r"D:/项目unet/my_code/test_dataset/reconstruction_test"
+val_mask_dir = r"D:/项目unet/my_code/test_dataset/gold_mask_test"
 
 # =========================
 # 输出路径：全部切换到 uctransnet_A
 # =========================
-proj_root = r"D:/项目unet/寒假/my_code/uctransnet_A"
+proj_root = r"D:/项目unet/my_code/uctransnet_A"
 save_dir = os.path.join(proj_root, "results")
 os.makedirs(save_dir, exist_ok=True)
 
